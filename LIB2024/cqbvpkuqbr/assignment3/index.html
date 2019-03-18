@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+		<meta name="author" content="Erin Czerneda">
+		<meta name="description" content="This is an HTML document containing HTML tags">
+		<meta name="keywords" content="HTML, HTML5, Tags, Basic HTML, Standard Tags, Forms">
+		<meta name="robots" content="noindex, nofollow">
+			<title>HTML Forms</title>
+			<link rel="stylesheet" type="text/css" href="czer0012.github.io\LIB2024\cqbvpkuqbr\assignment3\style.css">
+</head>
+<body>
+	<header id="header">
+		<h1>Assignment 3 - HTML Forms</h1>
+	</header>
+	<main id="main">
+		<div class="wrapper"class="wrapper">
+			<section id="html-forms" class="main-section">
+				<form action="somephppage.php" method="get">
+					<div id="fn-container" class="form-elm">
+						<label for="firstName">First Name: </label>
+						<input type="text" name="firstName" id="firstName" placeholder="Amanda">
+					</div>
+					<div id="ln-container" class="form-elm">
+						<label for="lastName">Last Name: </label>
+						<input type="text" name="lastName" id="lastName" placeholder="Vandavossenberg">
+					</div>
+					<div id="email-container" class="form-elm">
+						<label>Email: </label>
+						<input type="email" name="email" id="email"placeholder="avv@gmail.com">
+					</div>
+					<div id="pass-container" class="form-elm">
+						<label for="pass">Password: </label>
+						<input type="password" name="pass" id="pass" required>
+					</div>
+					<div id="sum-container" class="form-elm">
+						<label for="summary">Tell us a bit about yourself: </label>
+						<textarea name="summary" id="summary"></textarea>
+					</div>
+					<div id="date-container" class="form-elm">
+						<label for="dte">When's your Birthday?</label>
+						<input type="date" name="dte" id="dte"><br>
+					</div>
+					<div id="mobile-container" class="form-elm">
+						<label for="num">What's your Cell Number?</label>
+						<input type="number" id="num" name="num" min="00000000000" max="99999999999" placeholder="12345678910" required><br>
+					</div>
+					<div id="radio-container" class="form-elm">
+						<h5>What is your Gender Identity?</h5>
+						<label for="female">Female:<input type="radio" name="forms" id="female" checked value="female"></label>
+						<br>
+						<label for="male">Male:<input type="radio" name="forms" id="male" checked value="male"></label>
+						<br>
+						<label for="nonbinary">Nonbinary:<input type="radio" name="forms" id="nonbinary" checked value="nonbinary"></label>
+						<br>
+					</div>
+					<div id="og-contianer" class="form-elm">
+						<label for="location">Where are you from?</label>
+						<select name="location" id="location">
+							<optgroup label="Province">
+								<option value="ab">Alberta</option>
+								<option value="bc">British Columbia</option>
+								<option value="mn">Manitoba</option>
+								<option value="nb">New Brunswick</option>
+								<option value="nf">Newfoundland and Labrador</option>
+								<option value="nt">Northwest Territories</option>
+								<option value="ns">Nova Scotia</option>
+								<option value="nv">Nunavut</option>
+								<option value="on">Ontario</option>
+								<option value="pi">Prince Edward Island</option>
+								<option value="qb">Quebec</option>
+								<option value="sk">Saskatchewan</option>
+								<option value="yk">Yukon</option>
+							</optgroup>
+							<optgroup label="Country">
+								<option value="cn">Mexico</option>
+								<option value="us">U.S.</option>
+							</optgroup>
+						</select>
+					</div>
+					<div id="postal-container" class="form-elm">
+						<label for="pCode">Postal Code: </label>
+                		<input type="text" name="pCode" id="pCode">
+					</div>
+					<div id="hobbies-container" class="form-elm">
+						<fieldset>
+							<legend>What are some of your interests?</legend>
+							<div>
+								<label for="knit">Knitting<input type="checkbox" name="knit" id="knit"></label>
+								<br>
+								<label for="sew">Sewing<input type="checkbox" name="sew" id="sew"></label>
+								<br>
+								<label for="cats">Cats<input type="checkbox" name="cats" id="cats"></label>
+								<br>
+								<label for="tea">Tea<input type="checkbox" name="tea" id="tea"></label>
+								<br>
+							</div>
+						</fieldset>
+					</div>
+					<div id="url-container" class="form-elm">
+						<label for="url">Do you have a Blog?</label>
+						<input type="url" name="url" id="url" placeholder="verbageandvitriol.wordpress.com"><br>
+					</div>
+					<button type="submit">Submit</button>
+					<button type="reset">Reset</button>
+				</form>
+			</section>
+	</main>
+	<footer id="footer">
+		
+	</footer>
+</body>
+</html>
