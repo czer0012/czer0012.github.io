@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.header {
+  float: left;
+  padding: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  background: #7cc576;
+  height: 235px;
+}
+
+#logo {
+  float: left;
+  width: 150px;
+  padding: 0px;
+  box-sizing: border-box;
+  background: #7cc576;
+}
+
+#title-container {
+  float: left;
+  padding: 10px;
+  box-sizing: border-box;
+  background: #7cc576;
+  font-family: 'Merriweather', serif;
+  font-size: 30px;
+}
+
+#nav-container {
+  float: left;
+  padding: 10px 50px;
+  box-sizing: border-box;
+  background: #7cc576;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  display: block;
+}
+
+#table{
+  width: 100%;
+}
+
+.button {
+	background-color: #6dcff6;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+ 	margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border:  2px solid #6dcff6;
+  border-radius: 5px;
+}
+
+.button:hover {
+	background-color: white;
+  border:  2px solid #6dcff6;
+  border-radius: 5px;
+}
+
+.main{
+  background-image: url("img/background.png");
+  background-repeat: repeat;
+}
+
+#main-content {
+  float: left;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: 'Lora', serif;
+  font-size: 15px;
+  width: 65%;
+}
+
+#sidebar {
+  float: left;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: 'Lora', sans-serif;
+  font-size: 10px;
+  width: 35%;
+}
+
+#secondary-cont-title {
+  float: left;
+}
+
+#secondary-content .image {
+  float: left;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: 'Lora', serif;
+  font-size: 15px;
+  width: 33%;
+}
+ 
+#caption {
+  text-align: center;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 5px;
+}
+
+.footer {
+  float: left;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  background: #7cc576;
+  height: 110px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 10px;
+}
+
+#copyright {
+  padding: 30px;
+  width: 50%;
+}
+
+#social {
+  align-content: right;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.right {
+  float: right;
+  right: 0px;
+  padding: 5px;
+}
