@@ -1,43 +1,134 @@
 <!DOCTYPE html>
-<!-- Comment Tag Shortcut: ctrl + backslash -->
-<!-- html is the root tag. EVERYTHING goes in here -->
-<html lang="en">
-<!-- head: text in browser tab -->
-	<head>
-		<!-- meta = just for browser --> 
-		<meta charset="utf-8">
-		<meta name="author" content="Erin Czerneda">
-		<!--TO ADD<link rel="stylesheet" type="text/css" href="???.css">-->
-		<title>Q&A - LIB2024 - Erin Czerneda</title>
-	</head>
-	<body>
-		<h1 style="border: 3px solid #FE2E64; text-align: center;">Q&A for LIB2024</h1>
-			<h3>WEEK 3</h3>
-			<ol>
-				<!-- Question 1 -->
-				<li>
-					<p><strong style="color: #FE2E64;">Question: </strong>What are the three components of Web?</p>
-					<p><i>HTML, CSS, JavaScript</i></p>
-				</li>
-				<!-- Question 2 -->
-				<li>
-					<p><strong style="color: #FE2E64;">Question: </strong>Define version control and give one example.</p>
-					<p><i> Version Control: a system that keeps track of all changes made to a file or project. Useful for referring to previous versions of your code so nothing gets lost or corrupted. Version control also protects against incompatible changes to a file, if edits react in unexpected ways, a file free of those changes still exists. In class we will be using GitHub.</i></p>
-				</li>
-				<!-- Question 3 -->
-				<li>
-					<p><strong style="color: #FE2E64;">Question: </strong>What tag is used to create the title of a web page? Give an example.</p>
-					<p><i> The &lt;title&gt; tag. The text that is nested in this tag will be displayed in the browser tab.</i></p>
-					<p><strong>For this page, the "title" looks like this: &lt;title&gt;Q&A - LIB2024 - Erin Czerneda&lt;/title&gt;</strong></p>
-				</li>
-				<!-- Question 4 -->
-				<li>
-					<p><strong style="color: #FE2E64;">Question: </strong>What tag is used to create a paragraph in html? Give an example.</p>
-					<p><i>The &lt;p&gt; tag. This will start a new line of text.</i></p>
-					<p><strong>&lt;p&gt;Like this!&lt;/p&gt;</strong>
-					</p>
-				</li>
-			</ol>
-		<h4 style="text-align: center;">Erin Cz. &#128522;</h4>
-		<h3></h3>
-	</body>
+<html>
+<head>
+	<title>QA - LIB2024 - Erin Czerneda</title>
+</head>
+<body>
+<h1>QA for LIB2024</h1>
+<ol>
+	<li>
+		<p><strong>Q: </strong>What are the three components of web?</p>
+		<p><strong>A: </strong>Uniform Resource Locators, Hypertext Transfer Protocol, Hypertext Mark-up Language.</p>
+	</li>
+	<li>
+		<p><strong>Q: </strong>Define version control and give one example.</p>
+		<p><strong>A: </strong>System that records changes to a file such as Git.</p>
+	</li>
+	<li>
+		<p><strong>Q: </strong>What tag is used to create the title of a web page? Give an example.</p>
+		<p><strong>A: </strong>&lt;title&gt; 
+			<br>Example: 
+			<br>&lt;head&gt; 
+			<br>&lt;title&gt; QA &lt;/title&gt; 
+			<br>&lt;/head&gt;</p>
+	</li>
+	<li>
+		<p><strong>Q: </strong>What tag is used to create a paragraph in html? Give an example.</p>
+		<p><strong>A: </strong>&lt;p&gt;  &lt;/p&gt;
+			<br>Example:
+			<br> &lt;p&gt; Unnecessarily ceaseless creatively that ouch fanatic raving assiduously a while darn friskily oh rapt far reliable densely darn hot this. &lt;/p&gt;</p>
+	</li>
+	<li>
+		<p><strong>Q: </strong>Identify the odd one from these tags: &lt;span&gt;, &lt;p&gt;, &lt;a&gt;, &lt;i&gt;  and state the reason?</p>
+		<p><strong>A: </strong>&lt;a&gt; as it defines a hyperlink, the others affect the display of text. </p>
+	</li>
+	<li>
+		<p><strong>Q: </strong>What are the tags required to create a navigation list in HTML?</p>
+		<p><strong>A: </strong>&lt;nav&gt;, &lt;ul&gt;, &lt;il&gt;</p>
+	</li>
+	<li>
+		<p><strong>Q: </strong>What element is used to create images? Name its attributes.</p>
+		<p><strong>A: </strong>&lt;img&gt; attritbutes include: src, alt, crossorigin, height, ismap, longdesc, sizes, usemap, width</p>
+	</li>
+	<li>
+		<p><strong>Q: </strong>Identify the odd one from these tags: &lt;table&gt;, &lt;tr&gt;, &lt;b&gt;, &lt;td&gt;  and state the reason</p>
+		<p><strong>A: </strong>They are all table tags. Except &lt;b&gt; as it alters the appearance of text regardless of the presence of a table.</p>
+	</li> 
+	<li>
+		<p><strong>Q: </strong>Give an example of color picker input. </p>
+		<p><strong>A: </strong>#ff0000</p>
+	</li>
+	<li>
+		<p><strong>Q: </strong>What is the use of name and value attributes? Give two examples </p>
+		<p><strong>A: </strong>Both are used to identify elements for manipulation in CSS or JvaScript
+			<br>Example: 
+			<br>&lt;form action="//action_page.php" method="get"&gt;
+			<br>&lt;button name="subject" type="submit" value="html"&gt;HTML&lt;/button&gt;</p>
+	</li>
+	<li>
+		<p><strong>Q: </strong>Give an example of inline style. </p>
+		<p><strong>A: </strong>
+			<br>&lt;head&gt;
+			<br>&lt;style&gt;
+			<br>body {
+			<br>background-colour: white;
+			<br>}
+			<br>&lt;/style&gt;
+			<br>&lt;/head&gt;</p>
+	</li>
+	<li>
+		<p><strong>Q: </strong>How would you link an external style sheet? Give example.</p>
+		<p><strong>A: </strong>Using &lt;link&gt;
+			<br>&lt;head&gt;
+			<br>&lt;link rel="stylesheet" type="text/css" href="style.css"&gt;
+			<br>&lt;/head&gt;</p>
+	</li>
+	<li>
+		<p><strong>Q: </strong>Create CSS block to center an element both horizontally and vertically that has position:absolute and has width:200px and height:200px.</p>
+		<p><strong>A: </strong>
+			<br>.element {
+			<br>position: absolute;
+			<br>right: 0px;
+			<br>width: 200px;
+			<br>hight: 200px;
+			<br>padding: 10px;
+			<br>}</p>
+	</li> 
+	<li>
+		<p><strong>Q: </strong>Create CSS keyframes block called "spin" that rotates an element.</p>
+		<p><strong>A: </strong>
+			<br>@keyframes spin {
+			<br>from {transform:rotate(0deg);
+			<br>}
+			<br>to {transform:rotate(360deg);
+			<br>}
+			<br>}</p>
+	</li>
+	<li>
+		<p><strong>Q: </strong>Create CSS animation block to rotate an element that has the following properties : class "rotate-me", It rotates 5 times at intervals of 0.5s with "linear" transition using animation keyframes "spin" </p>
+		<p><strong>A: </strong>
+			<br>.rotate-me {
+			<br>animation-duration: 5s;
+			<br>animation-iteration-count: 5;
+			<br>animation-delay: 0.5s;
+			<br>animation-timing-function: linear;
+			<br>@keyframes spin {
+			<br>from {transform:rotate(0deg);
+			<br>}
+			<br>to {transform:rotate(360deg);
+			<br>}
+			<br>}</p>
+	</li>
+	<li>
+		<p><strong>Q: </strong>How would you include create an alert with string "I love JavaScript" using JavaScript?</p>
+		<p><strong>A: </strong>$("p").click(function(){alert("I love JavaScript");});</p>
+	</li>
+	<li>
+		<p><strong>Q: </strong>How would you fade out an element with id "fade-me" after a delay of 300ms using JQuery?</p>
+		<p><strong>A: </strong>$("fade-me").delay(300).fadeout()</p>
+	</li>
+	<li>
+		<p><strong>Q: </strong>How would you select all elements with class "my-class" using Javascript and Jquery?</p>
+		<p><strong>A: </strong>$("my-class")</p>
+	</li>
+	<li>
+		<p><strong>Q: </strong>Give an example of input field that takes phone number with format "123-456-7890"?</p>
+		<p><strong>A: </strong>&lt;input type="number" id="num" name="num" min="00000000000" max="99999999999" placeholder="12345678910" required&gt;</p>
+	</li>
+	<li>
+		<p><strong>Q: </strong>Among HTML, CSS, Javascript, JQuery, what language did you like the best? State the reason. </p>
+		<p><strong>A: </strong>I had been very excited to learn more about CSS and JavaScript, but I do not feel that I understand them any better. My confidence level is highest with HTML.</p>
+	</li>
+</ol>
+</body>
+</html>
