@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+		<meta name="author" content="Erin Czerneda">
+		<meta name="description" content="This is an HTML document containing HTML tags">
+		<meta name="keywords" content="HTML, HTML5, Tags, Basic HTML, Standard Tags, CSS, Style">
+		<meta name="robots" content="noindex, nofollow">
+			<title>Final</title>
+			<link rel="stylesheet" type="text/css" href="css\style.css">
+</head>
+<body onload="myFunction()" style="margin:0;">
+<div id="loader"></div>
+<div style="display:none;" id="myDiv" class="animate-bottom">
+	<header id="header" class="header">
+		<div id="logo" class="header">
+			<figure>
+				<img src="img/logo.jpg" alt="logo">
+			</figure>
+		</div>
+		<div id="nav-container" class="header">
+			<nav>
+				<table id="table">
+					<td><button class="button" type="home">Home</button></td>
+					<td><button onclick="location.href='#about'" class="button" type="about">About</button></td>
+					<td><button onclick="location.href='#schedule'" class="button" type="schedule">Schedule</button></td>
+					<td><button onclick="location.href='#form'" class="button" type="portfolio">Profile</button></td>
+					<td><button onclick="location.href='#contact'" class="button" type="contact">Contact</button></td>
+				</table>
+			</nav>
+		</div>
+	</header>
+	<main id="main" class="main">
+		<section>
+			<div id="about" class="about">
+				<article>
+					<h2>ABOUT</h2>
+						<br>
+						<p>Now eldest new tastes plenty mother called misery get. Longer excuse for county nor except met its things. Narrow enough sex moment desire are. Hold who what come that seen read age its. Contained or estimable earnestly so perceived. Imprudence he in sufficient cultivated. Delighted promotion improving acuteness an newspaper offending he. Misery in am secure theirs giving an. Design on longer thrown oppose am.</p>
+				</article>
+			</div>
+			<div id="image">
+				<aside>
+					<a href="#img1"><img src="img\cozy.jpg" class="thumbnail" width="180"></a>
+					<a href="#_" class="lightbox" id="img1"><img src="img\cozy.jpg"></a>
+				</aside>
+			</div>	
+		</section>
+		<section>
+			<article class="form">
+				<h2>SCHEDULE</h2>
+					<br>
+					<div>
+  						<table id="schedule">
+  							<tr>
+    							<th>TIME</th>
+    							<th>MONDAY</th>
+    							<th>TUESDAY</th>
+    							<th>WEDNESDAY</th>
+    							<th>THURSDAY</th>
+    							<th>FRIDAY</th>
+  							</tr>
+  							<tr>
+    							<td>09:00-11:00</td>
+    							<td>Communications I</td>
+    							<td>Client Services</td>
+    							<td>Special Collections</td>
+    							<td>Directed Research Seminar</td>
+    							<td>Client Services</td>
+  							</tr>
+  							<tr>
+    							<td>11:00-12:30</td>
+    							<td>Reference</td>
+    							<td>Internet App</td>
+    							<td>Library Software</td>
+    							<td>French</td>
+    							<td>Reference</td>
+  							</tr>
+  							<tr>
+    							<td>14:00-15:00</td>
+    							<td>Acquisitions</td>
+    							<td>General Elective</td>
+    							<td>Marketing</td>
+    							<td>Emerging Library Tech</td>
+    							<td>Library Software</td>
+  							</tr>
+  							<tr>
+    							<td>15:30-17:30</td>
+    							<td>French</td>
+    							<td>French</td>
+    							<td>Acquisitions</td>
+    							<td>Subject Analysis</td>
+    							<td>CInternet App</td>
+  							</tr>
+  						</table>
+  					</div>
+  					<br>
+			</article>
+		</section>
+		<section class="sign-up">
+			<article class="sign-up">
+				<h2>EDIT PROFILE</h2>
+				<br>
+				<form id="form"action="submit.php" method="post">
+					<div class="row">
+						<label class="col-25">Name</label>
+						<input class="col-75" type="text" name="name" id="name">
+					</div>
+					<div class="row">
+						<label class="col-25">Email</label>
+						<input class="col-75" type="text" required="" name="email" id="email">
+					</div>
+					<div class="row">
+						<label class="clo-25">Address</label>
+						<input class="col-75" type="text" name="add" id="add">
+					</div>
+					<div class="row">
+						<label class="col-25">City</label>
+						<input class="col-75" type="text" required="" name="city" id="city">
+					</div>
+					<div class="row" id="og-contianer" class="form-elm">
+						<label class="col-25">Province</label>
+						<select class="col-75" name="province" id="province">
+							<optgroup label="Province">
+								<option value="ab">Alberta</option>
+								<option value="bc">British Columbia</option>
+								<option value="mn">Manitoba</option>
+								<option value="nb">New Brunswick</option>
+								<option value="nf">Newfoundland and Labrador</option>
+								<option value="nt">Northwest Territories</option>
+								<option value="ns">Nova Scotia</option>
+								<option value="nv">Nunavut</option>
+								<option value="on">Ontario</option>
+								<option value="pi">Prince Edward Island</option>
+								<option value="qb">Quebec</option>
+								<option value="sk">Saskatchewan</option>
+								<option value="yk">Yukon</option>
+							</optgroup>
+						</select>
+					</div>
+					<div class="row">
+						<label class="col-25">Postal Code</label>
+						<input class="col-75" type="text" required="" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" value="" name="pc" id="pc" placeholder="A0A 0A0">
+					</div>
+					<button type="submit" class="button">Submit</button>
+				</form>
+			</article>
+			<aside id="profile" class="sign-up">
+				<h2>PROFILE INFO</h2>
+				<br>
+			</aside>
+		</section>
+	</main>
+	<footer id="footer" class="footer">
+		<div id="links" class="footer">
+			<h5>QUICK LINKS</h5>
+				<br>
+					<ul>
+						<li><a href="#about" type="about">ABOUT</a>
+						<li><a href="#schedule" type="schedule">SCHEDULE</a>
+						<li><a href="#form" type="portfolio">PROFILE</a>
+						<li><a href="#address" type="contact">CONTACT</a>
+					<ul>
+		</div>
+		<div id="social" class="footer">
+			<h5>FOLLOW US</h5>
+				<br>
+				<a href="https://www.facebook.com" title="Facebook" target="_blank"><img src="img/facebook.png" alt="Facebook" class="right"></a>
+				<a href="https://www.youtube.com" title="Youtube" target="_blank"><img src="img/youtube.png" alt="Youtube" class="right"></a>
+				<a href="https://www.twitter.com" title="Twitter" target="_blank"><img src="img/twitter.png" alt="Twitter" class="right"></a>
+		</div>
+		<div id="contact" class="footer">
+			<h5>ADDRESS</h5>
+				<br>
+				<p>1385 Woodroffe Ave,<br>Nepean, ON K2G 1V8<br>Canada</p>
+		</div>
+	</footer>
+<script type="text/javascript">
+var myVar;
+function myFunction() {
+  	myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+</div>
+</body>
+</html>
